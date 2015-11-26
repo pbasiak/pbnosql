@@ -1,2 +1,5 @@
-# pbnosql
-NOSQL zadania
+# pbnosql - Zadania na zaliczenie
+
+## Podstawowe informacje
+
+
