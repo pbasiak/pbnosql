@@ -11,6 +11,7 @@
 #### Machina fizyczna
 
 [import-fizy]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/fiz-obciazenie.jpg
+![import-fizy]
 
 #### Machina wirtualna
 
