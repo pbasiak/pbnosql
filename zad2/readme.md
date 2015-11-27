@@ -16,12 +16,15 @@
 #### Machina wirtualna
 
 [import-wirt]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/wirt-import.jpg
+![import-wirt]
 
 #### Czas importu
 
 [import-time]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/time-import.jpg
+![import-time]
 
 #### Liczba zaimportowanych rekordów
 
 [import-count]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/count-import.jpg
+![import-count]
 
