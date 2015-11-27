@@ -2,7 +2,8 @@
 
 ## Praca systemu bez obciażeń
 
-[logo]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/przed.jpg
+[przed]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/przed.jpg
+![przed]
 
 ## Praca z zadaniem
 
