@@ -48,3 +48,8 @@ W moim przypadku (nie tylko podczas importu do bazy danych) najgorszym czynnikie
 [import-count]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/count-import.jpg
 ![import-count]
 
+
+## Geojson
+
+[geo]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/mapa.geojson
+![geo]
