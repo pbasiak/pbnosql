@@ -1,0 +1,33 @@
+{ "type": "FeatureCollection",
+    "features": [
+      { "type": "Feature",
+        "geometry": {"type": "Point", "coordinates": [18.5755219, 54.3961167]},
+        "properties": {"Miejsce": "Uniwersytet Gdański"}
+        },
+      { "type": "Feature",
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [17.18, 54.0961167], [17.28, 54.3961167], [17.38, 54.0961167], [17.48, 54.3961167]
+            ]
+          },
+          "properties": {
+           "prop0": "value0",
+           "prop1": {"this": "that"}
+           }
+        },
+      { "type": "Feature",
+         "geometry": {
+           "type": "Polygon",
+           "coordinates": [
+             [ [18.1755219, 54.3961167], [19.18, 54.3961167], [19.18, 55.4],
+               [18.1755219, 55.4], [18.1755219, 54.3961167] ]
+             ]
+         },
+         "properties": {
+           "prop0": "value0",
+           "prop1": {"this": "that"}
+           }
+         }
+       ]
+     }
