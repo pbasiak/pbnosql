@@ -18,3 +18,7 @@ Mongodb | 2.6.10
 ## NEO4J
 [Link]: https://github.com/pbasiak/neo4j-database
 Eksperymenty z Neo4J dostepne w tym repozytorium ![Link]
+
+## ZAD2
+[Zadanie 2]: https://github.com/pbasiak/pbnosql/tree/master/zad2
+Tutaj znajdziecie ![Zadanie 2]
