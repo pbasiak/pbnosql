@@ -51,5 +51,5 @@ W moim przypadku (nie tylko podczas importu do bazy danych) najgorszym czynnikie
 
 ## Geojson
 
-[geo]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/mapa.geojson
-![geo]
+[GeoJSON]: https://github.com/pbasiak/pbnosql/blob/master/zad2/mapa.geojson
+![GeoJSON]
