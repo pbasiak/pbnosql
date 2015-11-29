@@ -4,8 +4,8 @@
 
 
 1. [Zaliczenie](zad2/readme.md):
- - [x] Neo4j
- - [x] EDA
+ - [x] [Neo4j](https://github.com/pbasiak/neo4j-database)
+ - [x] [EDA](zad2/readme.md)
 1. Egzamin
  - [ ] Aggregation Pipeline
  - [ ] MapReduce
