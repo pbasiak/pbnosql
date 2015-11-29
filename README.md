@@ -1,7 +1,6 @@
 ## Pawel Basiak, pawel.basiak01@gmail.com
 
-## Podstawowe informacje
-
+### Informacje nt zadań
 
 1. [Zaliczenie](zad2/readme.md):
  - [x] [Neo4j](https://github.com/pbasiak/neo4j-database)
@@ -11,6 +10,7 @@
  - [ ] Aggregation Pipeline
  - [ ] MapReduce
 
+### Informacje o sprzecie oraz oprogramowaniu
 
 Typ  | Sprzęt | Maszyna wirtualna
 ------------- | ------------- | -------------
