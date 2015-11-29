@@ -12,7 +12,7 @@
 
 
 Typ  | Sprzęt | Maszyna wirtualna
-------------- | -------------
+------------- | ------------- | -------------
 Rodzaj | Laptop ASUS N56VZ | =
 Procesor | Intel Core i5 3210M @ 2.50GHz | =
 Liczba rdzeni  | 2 | 2
