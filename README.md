@@ -1,4 +1,4 @@
-## Pawel Basiak
+## Pawel Basiak, pawel.basiak01@gmail.com
 
 ## Podstawowe informacje
 
