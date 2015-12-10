@@ -21,32 +21,59 @@ W moim przypadku (nie tylko podczas importu do bazy danych) najgorszym czynnikie
 
 ## Praca systemu bez obciażeń
 
+### Maszyna fizyczna
 [przed]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/przed.jpg
 ![przed]
+
+### Maszyna wirtualna
+[przed-virtual]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/bezvirtual.png
+![przed-virtual]
 
 ## Praca z zadaniem
 
 ### Obciażenie podczas importu
 
-#### Machina fizyczna
+#### Maszyna fizyczna
 
+##### MongoDB
 [import-fizy]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/fiz-obciazenie.jpg
 ![import-fizy]
+##### PosgreSQL
+[p-import-fizy]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/posgreimport.png
+![p-import-fizy]
 
-#### Machina wirtualna
+#### Maszyna wirtualna
 
+##### MongoDB
 [import-wirt]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/wirt-import.jpg
 ![import-wirt]
 
+##### PostgreSQL
+[p-import-wirt]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/posgreimport-virtual.png
+
 #### Czas importu
 
+##### MongoDB
 [import-time]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/time-import.jpg
 ![import-time]
 
+##### PostgreSQL
+8037ms
+
 #### Liczba zaimportowanych rekordów
 
+##### MongoDB
 [import-count]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/count-import.jpg
 ![import-count]
+
+Zapytanie
+db.postal.count();
+
+##### PostgreSQL
+COUNT(SELECT * FROM zipcodes);
+
+#### Zapytania i prezentacja danych
+(soon)
 
 
 ## Geojson
