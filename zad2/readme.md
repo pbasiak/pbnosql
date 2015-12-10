@@ -50,6 +50,7 @@ W moim przypadku (nie tylko podczas importu do bazy danych) najgorszym czynnikie
 
 ##### PostgreSQL
 [p-import-wirt]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/posgreimport-virtual.png
+![p-import-wirt]
 
 #### Czas importu
 
@@ -73,8 +74,41 @@ db.postal.count();
 COUNT(SELECT * FROM zipcodes);
 
 #### Zapytania i prezentacja danych
-(soon)
 
+##### Prezentacja danych
+
+###### Miasta w Polsce oraz ich liczba kodów pocztowych
+Miasto  | Liczba kodów pocztowych
+------------- | -------------
+Sczecin | 1190
+Koszalin | 545
+Gdańsk | 661
+Olsztyn | 687
+Bialystok | 693
+Zielona Góra | 373
+Poznań | 1312
+Bydgoszcz | 720
+Warszawa | 4166
+Łódź | 1701
+Lublin | 599
+Kielce | 519
+Wroclaw | 1307
+Opole | 492
+Katowice | 671
+Kraków | 1131
+Rzeszów | 166
+
+###### Wybrane państwa oraz liczba ich kodów
+Państwo | Liczba kodów pocztowych
+------------- | -------------
+Polska | 21980
+USA | 43633
+Niemcy | 16484
+
+###### Województwo Pomorskie
+Województwo | Liczba kodów pocztowych
+------------- | -------------
+Pomorskie | 1625
 
 ## Geojson
 
