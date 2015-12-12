@@ -1,5 +1,7 @@
 # Zadanie 2 NOSQL
 
+# Spis tresci
+
 ## Opis
 
 Rekordy pochodza ze strony http://www.geonames.org/postal-codes/
