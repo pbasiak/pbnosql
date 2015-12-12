@@ -34,13 +34,19 @@ Rekordy pochodza ze strony http://www.geonames.org/postal-codes/
 Znajduja sie tam wszystkie kody pocztowe na calym swiecie.
 
 ### Liczba rekordow
+```
 1119268
+```
 
 ### Rozmiar pliku
+```
 111 MB
+```
 
 ### Format pliku
+```
 CSV
+```
 
 ## Informacje o sprzecie oraz oprogramowaniu
 
@@ -103,7 +109,10 @@ Zrzut ekranu przedstawiajacy konfiguracje Oracle VM VirtualBox
 ![import-time]
 
 ##### PostgreSQL
+```
 8037ms
+```
+
 
 #### Liczba zaimportowanych rekordów
 
