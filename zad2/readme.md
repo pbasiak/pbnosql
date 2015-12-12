@@ -125,6 +125,11 @@ Zrzut ekranu przedstawiajacy konfiguracje Oracle VM VirtualBox
 #### Zapytania i prezentacja danych
 
 ##### MongoDB
+###### Import danych do bazy
+```
+mongoimport -d codes -c postals --type csv --file /home/pawel/Mongo/all/allCountries.csv --headerline
+```
+
 ###### Liczba rekordów
 ```mongodb
 db.postal.count();
@@ -137,6 +142,34 @@ db.postal.find( Country: "PL" ).count();
 ```
 
 ##### PostgreSQL
+###### Utworzenie tabeli
+```postgres
+CREATE TABLE zipcodes3
+        ( id serial NOT NULL PRIMARY KEY
+        , Country varchar
+        , Postal varchar
+        , Name varchar
+        , an1 varchar
+        , ac1 varchar
+        , an2 varchar
+        , ac2 varchar
+        , an3 varchar
+        , ac3 varchar
+        , latitude varchar
+        , longitude varchar
+        , accuracy varchar
+        );
+
+```
+
+###### Import danych do tabeli
+```postgres
+COPY zipcodes3 (Country,Postal,Name,an1,ac1,an2,ac2,an3,ac3,latitude,longitude,accuracy)
+FROM '/home/pawel/Mongo/all/allCountries.csv'
+        WITH CSV delimiter '	'
+        ;
+```
+
 ###### Liczba rekordów
 ```Postgres
 SELECT COUNT(*) FROM zipcodes;
