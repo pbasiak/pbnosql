@@ -44,6 +44,7 @@ Karta graficzna | NVIDIA GeForce GT 650M 2GB | =
 System | Windows 8.1 64-bit | Ubuntu 15.10 64-bit
 Wirtualizacja | - | Oracle VM VirtualBox v4.3.32 r103443
 Mongodb | - | 2.6.10
+PostgreSQL | - | 9.4.5
 
 ## Praca systemu bez obciażeń
 
@@ -93,13 +94,42 @@ Mongodb | - | 2.6.10
 [import-count]: https://raw.githubusercontent.com/pbasiak/pbnosql/master/zad2/img/count-import.jpg
 ![import-count]
 
-Zapytanie
-db.postal.count();
-
 ##### PostgreSQL
-COUNT(SELECT * FROM zipcodes);
 
 #### Zapytania i prezentacja danych
+
+##### MongoDB
+###### Liczba rekordów
+```mongodb
+db.postal.count();
+```
+
+###### Liczba rekordów z dana wartoscia (np. Gdańsk)
+```mongodb
+db.postal.find( Name: "Gdańsk" ).count();
+db.postal.find( Country: "PL" ).count();
+```
+
+##### PostgreSQL
+###### Liczba rekordów
+```Postgres
+SELECT COUNT(*) FROM zipcodes;
+```
+
+###### Liczba rekordów z dana wartoscia
+```Postgres
+SELECT COUNT(postal) FROM zipcodes WHERE name = 'Gdańsk';
+```
+###### Wypisanie rekordów z dana wartoscia
+```Postgres
+SELECT name FROM zipcodes WHERE country = 'PL';
+```
+
+###### 5 państw z liczba kodow pocztowych wieksza niż 51000
+```Postgres
+SELECT count(*), country FROM zipcodes GROUP BY country HAVING COUNT(*) > 51000  LIMIT 5; 
+```
+
 
 ##### Prezentacja danych
 
@@ -136,7 +166,12 @@ Województwo | Liczba kodów pocztowych
 ------------- | -------------
 Pomorskie | 1625
 
-## Geojson
+###### 5 państw posiadajacych najwiecej kodów pocztowych
+Państwo | Skrót | Liczba
+------------- | ------------- | -------------
+Portugalia | PT | 204001
+Indie | IN | 154809
+Meksyk | MX | 144513
+Japonia | JP | 94388
+Francja | FR | 51131
 
-[GeoJSON]: https://github.com/pbasiak/pbnosql/blob/master/zad2/mapa.geojson
-![GeoJSON]
