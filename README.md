@@ -1,6 +1,6 @@
 ## Pawel Basiak, pawel.basiak01@gmail.com
 
-### Informacje nt zadań
+Rozwiazania zadań z "Technologie NoSQL"
 
 1. [Zaliczenie](zad2/readme.md):
  - [x] [Neo4j](https://github.com/pbasiak/neo4j-database)
@@ -10,5 +10,5 @@
  - [ ] Aggregation Pipeline
  - [ ] MapReduce
 
-
+Informacje o sprzecie zawarte w zadaniach (EDA)
 
