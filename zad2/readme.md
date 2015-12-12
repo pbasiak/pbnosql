@@ -199,4 +199,4 @@ Ogolnie jest przeswiadczenie, że procesor jest najważniesjszy poczas takich op
 W moim przypadku (nie tylko podczas importu do bazy danych) najgorszym czynnikiem byl dysk. Szybkosć dysku niestety nie pomagala. Praca na komputerze nie byla mozliwa podczas operacji importu czy konwersji pliku do csv. Widac bylo znaczne skoki pracy dysku. Wniosek jest taki, że do to takich operacji powinno sie zwrocic uwage przede wszystkim na dysk. Dysk powinien być szybki czyli najlepiej wybrać dysk SSD szczególnie podczas pracy na wirtualnej maszynie kiedy system musi dzielić sprzet pomiedzy maszyny.
 
 
-** Wydawać by sie moglo, że najwieksze Państwa beda posiadać najwieksza liczbe kodow pocztowych. Jednak szczególnym zaskoczeniem jest Portugalia (w porównaniu do np USA pod wzgledem wielkosci).**
+**Wydawać by sie moglo, że najwieksze Państwa beda posiadać najwieksza liczbe kodow pocztowych. Jednak szczególnym zaskoczeniem jest Portugalia (w porównaniu do np USA pod wzgledem wielkosci).**
