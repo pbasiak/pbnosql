@@ -57,6 +57,12 @@ Wirtualizacja | - | Oracle VM VirtualBox v4.3.32 r103443
 Mongodb | - | 2.6.10
 PostgreSQL | - | 9.4.5
 
+[oracle]: https://github.com/pbasiak/pbnosql/blob/master/zad2/img/oracle.jpg
+
+Zrzut ekranu przedstawiajacy konfiguracje Oracle VM VirtualBox
+
+![oracle]
+
 ## Praca systemu bez obciażeń
 
 ### Maszyna fizyczna
