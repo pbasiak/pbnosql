@@ -10,7 +10,23 @@
   * [Maszyna fizyczna](#maszyna-fizyczna)
   * [Maszyna wirtualna](#maszyna-wirtualna)
 4. [Praca z zadaniem](#praca-z-zadaniem)
-  * [Obciazenie podczas importu](#obciazenie-podczas-importu)
+  * [Obciazenie podczas importu](#obciażenie-podczas-importu)
+    * [Maszyna Fizyczna](#maszyna-fizyczna-1)
+      * [MongoDB](#mongodb)
+      * [PostgreSQL](#posgresql)
+    * [Maszyna Wirtualna](#maszyna-wirtualna-1)
+      * [MongoDB](#mongodb-1)
+      * [PostgreSQL](#postgresql)
+    * [Czas importu](#czas-importu)
+      * [MongoDB](#mongodb-2)
+      * [PostgreSQL](#postgresql-1)
+  * [Zapytania i prezentacja danych](#zapytania-i-prezentacja-danych)
+    * [Prezentacja danych](#prezentacja-danych)
+      * [Miasta w Polsce oraz ich liczba kodów pocztowych](#miasta-w-polsce-oraz-ich-liczba-kodów-pocztowych)
+      * [Wybrane państwa oraz ich liczba kodów](#wybrane-państwa-oraz-ich-liczba-kodów)
+      * [Województwo Pomorskie](#województwo-pomorskie)
+      * [5 państw posiadajacyh najwiecej kodów pocztowych](#5-państw-posiadajacych-najwiecej-kodów-pocztowych)
+5. [Wnioski](#wnioski)
 
 ## Opis
 
@@ -25,11 +41,6 @@ Znajduja sie tam wszystkie kody pocztowe na calym swiecie.
 
 ### Format pliku
 CSV
-
-### Wnioski
-Czas importu w porownaniu do liczby rekordow jest calkiem przyjemny.
-Ogolnie jest przeswiadczenie, że procesor jest najważniesjszy poczas takich operacji.
-W moim przypadku (nie tylko podczas importu do bazy danych) najgorszym czynnikiem byl dysk. Szybkosć dysku niestety nie pomagala. Praca na komputerze nie byla mozliwa podczas operacji importu czy konwersji pliku do csv. Widac bylo znaczne skoki pracy dysku. Wniosek jest taki, że do to takich operacji powinno sie zwrocic uwage przede wszystkim na dysk. Dysk powinien być szybki czyli najlepiej wybrać dysk SSD szczególnie podczas pracy na wirtualnej maszynie kiedy system musi dzielić sprzet pomiedzy maszyny.
 
 ## Informacje o sprzecie oraz oprogramowaniu
 
@@ -175,3 +186,8 @@ Meksyk | MX | 144513
 Japonia | JP | 94388
 Francja | FR | 51131
 
+
+## Wnioski
+Czas importu w porownaniu do liczby rekordow jest calkiem przyjemny.
+Ogolnie jest przeswiadczenie, że procesor jest najważniesjszy poczas takich operacji.
+W moim przypadku (nie tylko podczas importu do bazy danych) najgorszym czynnikiem byl dysk. Szybkosć dysku niestety nie pomagala. Praca na komputerze nie byla mozliwa podczas operacji importu czy konwersji pliku do csv. Widac bylo znaczne skoki pracy dysku. Wniosek jest taki, że do to takich operacji powinno sie zwrocic uwage przede wszystkim na dysk. Dysk powinien być szybki czyli najlepiej wybrać dysk SSD szczególnie podczas pracy na wirtualnej maszynie kiedy system musi dzielić sprzet pomiedzy maszyny.
