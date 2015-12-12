@@ -1,6 +1,16 @@
 # Zadanie 2 NOSQL
 
 # Spis tresci
+1. [Opis](#opis)
+  * [Liczba rekordów](#liczba-rekordow)
+  * [Rozmiar pliku](#rozmiar-pliku)
+  * [Format pliku](#format-pliku)
+2. [Informacje o sprzecie i oprogramowaniu](#informacje-o-sprzecie-i-oprogramowaniu)
+3. [Praca systemu bez obciazen](#praca-systemu-bez-obciazen)
+  * [Maszyna fizyczna](#maszyna-fizyczna)
+  * [Maszyna wirtualna](#maszyna-wirtualna)
+4. [Praca z zadaniem](#praca-z-zadaniem)
+  * [Obciazenie podczas importu](#obciazenie-podczas-importu)
 
 ## Opis
 
