@@ -7,8 +7,20 @@ Rozwiazania zadań z "Technologie NoSQL"
  - [x] [EDA](zad2/readme.md)
  - [x] [Mapa GeoJSON](https://github.com/pbasiak/pbnosql/blob/master/zad2/mapa.geojson)
 1. [Egzamin](egzamin/readme.md):
- - [ ] [Aggregation Pipeline](egzamin/readme.md)
+ - [x] [Aggregation Pipeline](egzamin/readme.md)
  - [ ] MapReduce
 
-Informacje o sprzecie zawarte w zadaniach (EDA)
+##### Informacje o sprzecie
 
+Typ  | Sprzęt | Maszyna wirtualna
+------------- | ------------- | -------------
+Rodzaj | Laptop ASUS N56VZ | =
+Procesor | Intel Core i5 3210M @ 2.50GHz | =
+Liczba rdzeni  | 2 | 2
+Dysk | HDD 5200 (1TB) | 180GB
+RAM | 2 x 4GB DDR3 | 5067MB
+Karta graficzna | NVIDIA GeForce GT 650M 2GB | =
+System | Windows 8.1 64-bit | Ubuntu 15.10 64-bit
+Wirtualizacja | - | Oracle VM VirtualBox v4.3.32 r103443
+Mongodb | - | 2.6.10
+PostgreSQL | - | 9.4.5
