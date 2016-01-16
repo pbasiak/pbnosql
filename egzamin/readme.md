@@ -173,7 +173,74 @@ Wynik:
 | New York | 2308      |
 | Ohio | 1488      |
 
-## Agregacje (województwa w Polsce)
+## Agregacja (5 stanów z największą ilością kodów)
+
+Agregacja:
+```
+ db.collection('postal').aggregate(
+     [
+       { $match : { "Country" : "US" } },
+       { $group : { _id : "$an1", "count" : { $sum: 1 } } },
+       { $sort : { "count" : -1 } },
+       { $limit : 5 }
+     ]
+   )
+```
+
+Wynik:
+```
+[ { _id: 'California', count: 2796 },
+  { _id: 'Texas', count: 2743 },
+  { _id: 'New York', count: 2308 },
+  { _id: 'Pennsylvania', count: 2253 },
+  { _id: 'Illinois', count: 1646 } ]
+```
+
+#### Zestawienie danych
+
+| Stan USA         | Liczba kodów       |
+| ------------- | ------------- |
+| California        | 2743 |
+| Texas      | 2743      |
+| New York | 2308      |
+| Pennsylvania | 2253      |
+| Illinois | 1646      |
+
+## Agregacja (5 stanów z najmniejszą ilością kodów)
+
+Agregacja:
+```
+db.collection('postal').aggregate(
+     [
+       { $match : { "Country" : "US" } },
+       { $group : { _id : "$an1", "count" : { $sum: 1 } } },
+       { $sort : { "count" : 1 } },
+       { $limit : 6 }
+     ]
+   )
+```
+
+Wynik:
+```
+[ { _id: '', count: 19 },
+  { _id: 'Rhode Island', count: 91 },
+  { _id: 'Delaware', count: 99 },
+  { _id: 'Hawaii', count: 143 },
+  { _id: 'Wyoming', count: 204 },
+  { _id: 'Nevada', count: 263 } ]
+```
+
+#### Zestawienie danych
+
+| Stan USA         | Liczba kodów       |
+| ------------- | ------------- |
+| Rhode Island        | 91 |
+| Delaware      | 99      |
+| Hawaii | 143      |
+| Wyoming | 204      |
+| Nevada | 263      |
+
+## Agregacja (województwa w Polsce)
 
 Agregacja
 ```
@@ -198,4 +265,73 @@ Wynik
 | Świętokrzyskie      | 643      |
 | Małopolskie | 1549      |
 | Mazowieckie | 4657      |
+| Podlaskie | 823      |
+
+
+## Agregacja (5 województw z największą ilością kodów)
+
+Agregacja:
+```
+db.collection('postal').aggregate(
+     [
+       { $match : { "Country" : "PL" } },
+       { $group : { _id : "$an1", "count" : { $sum: 1 } } },
+       { $sort : { "count" : -1 } },
+       { $limit : 5 }
+     ]
+   )
+```
+
+Wynik:
+```
+[ { _id: 'Mazowieckie', count: 4657 },
+  { _id: 'Zachodniopomorskie', count: 1964 },
+  { _id: 'Łódzkie', count: 1936 },
+  { _id: 'Pomorskie', count: 1625 },
+  { _id: 'Dolnośląskie', count: 1623 } ]
+```
+
+#### Zestawienie danych
+
+| Województwo        | Liczba kodów       |
+| ------------- | ------------- |
+| Mazowieckie        | 4657 |
+| Zachodniopomorskie      | 1964      |
+| Łódzkie | 1936      |
+| Pomorskie | 1625      |
+| Dolnośląskie | 1623      |
+
+
+## Agregacja (5 województw z najmniejszą ilością kodów)
+
+Agregacja:
+```
+db.collection('postal').aggregate(
+     [
+       { $match : { "Country" : "PL" } },
+       { $group : { _id : "$an1", "count" : { $sum: 1 } } },
+       { $sort : { "count" : 1 } },
+       { $limit : 6 }
+     ]
+   )
+```
+
+Wynik:
+```
+[ { _id: '', count: 1 },
+  { _id: 'Lubuskie', count: 480 },
+  { _id: 'Podkarpackie', count: 511 },
+  { _id: 'Świętokrzyskie', count: 643 },
+  { _id: 'Opolskie', count: 651 },
+  { _id: 'Podlaskie', count: 823 } ]
+```
+
+#### Zestawienie danych
+
+| Województwo        | Liczba kodów       |
+| ------------- | ------------- |
+| Lubuskie        | 480 |
+| Podkarpackie      | 511      |
+| Świętokrzyskie | 643      |
+| Opolskie | 651      |
 | Podlaskie | 823      |
